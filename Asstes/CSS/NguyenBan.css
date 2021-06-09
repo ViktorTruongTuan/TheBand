@@ -4,8 +4,7 @@
     box-sizing:border-box;
     margin:0;
 }
-/*click đau chữ ALT +CLICK
-Di chuyển:Aly+muitenPhai ->MuitenPhai hoac END*/
+
 html{
     font-family:Arial, Helvetica, sans-serif;
     scroll-behavior:smooth;
@@ -131,30 +130,25 @@ html{
     color:black;
 }
 .subnav li{ 
-    background-color:white;/*Sở dĩ ta thấy thẻ<a> cũng có background color màu trắng thực chất không phải là do Inherit mà là
-    do color của <a> để dạng trong suốt xem  list of all inheritable properies 
-    Có những thuộc tính sẽ inherit một số khác thì không, thẻ <a> con của <li> inherit text-align*/
+    background-color:white;
     list-style-type: none;
     text-align: center;
 }
 
 #slider{
-    margin-top: 46px;/*khi cuộn lên top không bị header che mất,46px=header's heigth    */
-    padding-top:50%; /*50% so voi CHIEU NGANG cua chinh no*/
+    margin-top: 46px;
+    padding-top:50%; 
     background:url('../image/chicago.jpg') top center /cover no-repeat;
-    /* background-repeat: no-repeat;
-    background-size: cover; */
-    position:relative;/*set position:relative để set ".text-contain* absolute nhắc lên khỏi 1 layer để canh giữa, không
-    làm thay đổi kích thước ảnh background*/
+    
+    position:relative;
 }
 #slider .text-contain{
     position:absolute;
     color:red;
     bottom:47px;
     text-align: center;
-    /* left:0; canh giữa cách 1
-    right:0; */
-    width:100%; /*canh giữa cách 2*/
+   
+    width:100%; 
     font-size:larger;
 }
 
@@ -238,21 +232,17 @@ html{
 .place-list{
     color:white;
     margin-top:32px; 
-    /* margin-left:-8px;
-    margin-right:-8px; */
-    /*chỉ áp dụng được cho FLoat thẻ con*/ 
+   
 }
 .place-item{
-    /*lưu ý: IMG không tự động co theo kích thước của thẻ
-    cha. vẫn giữ nguyên kích thước của chính nó*/
+    
     width:33.333%;
     float:left;
     padding:0 8px;
 
 }
 .place-img{
-    /*Vì vậy ta phải cho chiều ngang bức ảnh bằng tỉ lệ với 
-    kích thước chiều ngan của thẻ cha*/
+    
     width:100%;
 }
 .place-img:hover{
@@ -277,8 +267,7 @@ html{
 
 }
 .place-buy-btn{
-    /*thẻ <a> đang là inline nên padding bị chèn lên
-    che*/
+   
     color:white;
     text-decoration: none;
     display:inline-block;
